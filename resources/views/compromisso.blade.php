@@ -4,7 +4,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="imagens/missao-visao-valores-compromissos-1.png" /></div>
+            <div class="seo_description"><img src="{{asset('assets/imagens/missao-visao-valores-compromissos-1.png" /></div>
             <br/>
             <h1>COMPROMISSO</h1>
         </div>

@@ -3,7 +3,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="imagens/bannerlentesdicas_01.jpg" /></div></br>
+            <div class="seo_description"><img src="{{asset('assets/imagens/bannerlentesdicas_01.jpg" /></div></br>
             <h1>DICAS PARA CUIDAR DAS SUAS LENTES</h1></br>
             <p style="text-align: justify;">Para que possa desfrutar dos seus óculos o máximo de tempo
                 possível e para que possa continuar a ver clramente através das suas novas lentes, o cuidado

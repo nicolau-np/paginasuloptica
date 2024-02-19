@@ -3,7 +3,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="imagens/glass-logo-peq.jpg" /></div></br>
+            <div class="seo_description"><img src="{{asset('assets/imagens/glass-logo-peq.jpg')}}" /></div></br>
             <h1>NOVIDADES</h1>
         </div>
     </div>
@@ -34,7 +34,7 @@
                                     rotas de mapas, e além disso, também é possível efetuar chamadas de vídeo ou
                                     tirar fotos de algo que se esteja a ver e compartilhar imediatamente através
                                     da internet.</p> <br>
-                                <video id="movie1" controls="controls" poster="imagens/Introdução.png">
+                                <video id="movie1" controls="controls" poster="{{asset('assets/imagens/Introdução.png')}}">
                                     <source src="media/Introduction to Google Glass.mp4" type="video/mp4" />
                                 </video> <br>
 
@@ -45,7 +45,7 @@
                                     Glass é sofisticado e futurista, mas não possui lentes dos dois lados.</p>
                                 <br>
                                 <figure class="foto-legenda">
-                                    <img src="imagens/glass-quadro-homem-mulher.jpg" />
+                                    <img src="{{asset('assets/imagens/glass-quadro-homem-mulher.jpg')}}" />
                                     <figcaption>
                                         <h3>Google Glass</h3>
                                         <p>Uma nova maneira de ver o mundo.</p>
@@ -100,7 +100,7 @@
                                 <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma
                                     espécie de “super<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
                                 </p>
-                                <video id="movie2" controls="controls" poster="imagens/video-mini01.jpg">
+                                <video id="movie2" controls="controls" poster="{{asset('assets/imagens/video-mini01.jpg')}}">
                                     <source src="media/one-day.mp4" type="video/mp4" />
                                 </video>
 
@@ -110,7 +110,7 @@
                     <aside id="lateral">
                         <h1>Outras Notícias</h1>
                         <h2>Vídeo mais recente</h2>
-                        <video id="movie3" controls="controls" poster="imagens/video-mini02.jpg">
+                        <video id="movie3" controls="controls" poster="{{asset('assets/imagens/video-mini02.jpg')}}">
                             <source src="media/how-it-feels.mp4" type="video/mp4" />
                         </video>
 

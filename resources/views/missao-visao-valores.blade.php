@@ -3,7 +3,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="imagens/missao-visao-valores-compromissos-1.png" /></div>
+            <div class="seo_description"><img src="{{asset('assets/imagens/missao-visao-valores-compromissos-1.png')}}" /></div>
             <br/>
             <h1>MISSÃO,VISÃO,VALORES</h1>
         </div>
@@ -34,7 +34,7 @@
                                         aos nossos clientes.</p></br>
                                     <h1>VALORES</h1></br>
                                     <div class="seo_description">
-                                        <p style="text-align: justify;"><img src="imagens/captura.png" />
+                                        <p style="text-align: justify;"><img src="{{asset('assets/imagens/captura.png')}}" />
                                         </p>
                     </section>
                 </div>
