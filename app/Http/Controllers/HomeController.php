@@ -209,6 +209,6 @@ class HomeController extends Controller
         $menu = "Consultas Marcadas";
         $type = "consultas";
 
-        return view('painel', compact('title', 'menu', 'type'));
+        return view('painel', compact('title', 'menu', 'type', 'consultas'));
     }
 }

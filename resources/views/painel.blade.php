@@ -41,7 +41,7 @@
                                                         <td>{{ $consulta->email }}</td>
                                                         <td>{{ $consulta->telefone }}</td>
                                                         <td>{{ $consulta->local }}</td>
-                                                        <td>{{ $consulta->data }}</td>
+                                                        <td>{{ date('d-m-Y', strtotime($consulta->data)) }}</td>
                                                         <td>{{ $consulta->especialidade }}</td>
                                                     </tr>
                                                     @endforeach
