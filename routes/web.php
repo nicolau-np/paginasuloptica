@@ -33,4 +33,7 @@ Route::get('cadastro', [HomeController::class, 'cadastro']);
 Route::post('cadastro', [HomeController::class, 'cadastroStore']);
 
 
-Route::get('login', [HomeController::class, 'login']);
+Route::get('login', [HomeController::class, 'login'])->middleware('guest');
+Route::post('login', [HomeController::class, 'loginOn'])->middleware('guest');
+
+Route::get('painel', [HomeController::class, 'painel'])->name('painel')->middleware('auth');

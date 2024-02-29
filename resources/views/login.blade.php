@@ -15,7 +15,7 @@
                             <div class="footer__block">
                                 <div class="messagem">
                                     @if (session('message'))
-                                        <div class="alert alert-success">
+                                        <div class="alert alert-danger">
                                             {{ session('message') }}
                                         </div>
                                     @endif
@@ -38,7 +38,7 @@
                                                     @endif
                                                 </div>
 
-                                                <div class="col-md-8 mb-2">
+                                                <div class="col-md-8 mb-4">
                                                     <label for="cMail">Palavra-Passe: <span
                                                             class="text-danger">*</span></label> <input type="password"
                                                         name="password" id="cMail" size="20" maxlength="40"
