@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Consulta;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -160,16 +161,16 @@ class HomeController extends Controller
             'tEspec' => 'required',
             'tLocal' => 'required',
             'tTel' => 'required',
-            'data'=>'required',
+            'data' => 'required',
         ], [], []);
 
-        $data=[
-            'nome'=>$request->tNome,
-            'email'=>$request->tMail,
-            'local'=>$request->tLocal,
-            'telefone'=>$request->tTel,
-            'especialidade'=>$request->tEspec,
-            'data'=>$request->data,
+        $data = [
+            'nome' => $request->tNome,
+            'email' => $request->tMail,
+            'local' => $request->tLocal,
+            'telefone' => $request->tTel,
+            'especialidade' => $request->tEspec,
+            'data' => $request->data,
         ];
 
 
@@ -178,11 +179,36 @@ class HomeController extends Controller
         return back()->with('message', 'Consulta Marcada com Sucesso');
     }
 
-    public function login(){
+    public function login()
+    {
         $title = "Iniciar Sessao";
         $menu = "Login";
         $type = "login";
 
         return view('login', compact('title', 'menu', 'type'));
+    }
+
+    public function loginOn(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required',
+        ], [], []);
+
+
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password]))
+            return redirect('/painel');
+
+        return back()->with('message', 'Palavra-Passe incorrecta');
+    }
+
+    public function painel()
+    {
+        $consultas = Consulta::orderBy('created_at', 'desc')->get();
+        $title = "Painel";
+        $menu = "Consultas Marcadas";
+        $type = "consultas";
+
+        return view('painel', compact('title', 'menu', 'type'));
     }
 }
