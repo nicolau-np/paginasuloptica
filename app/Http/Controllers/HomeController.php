@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Consulta;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $title = "SUL Óptica";
         $menu = "Home";
         $type = "home";
@@ -14,7 +16,8 @@ class HomeController extends Controller
         return view('home', compact('title', 'menu', 'type'));
     }
 
-    public function quemSomos(){
+    public function quemSomos()
+    {
         $title = "Quem somos";
         $menu = "Quem somos";
         $type = "quem-somos";
@@ -22,7 +25,8 @@ class HomeController extends Controller
         return view('quem-somos', compact('title', 'menu', 'type'));
     }
 
-    public function missaoVisaoValores(){
+    public function missaoVisaoValores()
+    {
         $title = "Missão Visão e Valores";
         $menu = "Missão Visão e Valores";
         $type = "missao-visao-valores";
@@ -30,7 +34,8 @@ class HomeController extends Controller
         return view('missao-visao-valores', compact('title', 'menu', 'type'));
     }
 
-    public function compromisso(){
+    public function compromisso()
+    {
         $title = "Compromisso";
         $menu = "Compromisso";
         $type = "compromisso";
@@ -38,7 +43,8 @@ class HomeController extends Controller
         return view('compromisso', compact('title', 'menu', 'type'));
     }
 
-    public function consultasOptometria(){
+    public function consultasOptometria()
+    {
         $title = "Consultas de Optometria";
         $menu = "Consultas de Optometria";
         $type = "consultas-optometria";
@@ -46,7 +52,8 @@ class HomeController extends Controller
         return view('consultas-optometria', compact('title', 'menu', 'type'));
     }
 
-    public function consultasOftalmologia(){
+    public function consultasOftalmologia()
+    {
         $title = "Consultas de Oftalmologia";
         $menu = "Consultas de Oftalmologia";
         $type = "consultas-oftalmologia";
@@ -54,7 +61,8 @@ class HomeController extends Controller
         return view('consultas-oftalmologia', compact('title', 'menu', 'type'));
     }
 
-    public function dicasLentes(){
+    public function dicasLentes()
+    {
         $title = "Dicas de Lentes";
         $menu = "Dicas de Lentes";
         $type = "dicas-lentes";
@@ -62,7 +70,8 @@ class HomeController extends Controller
         return view('dicas-lentes', compact('title', 'menu', 'type'));
     }
 
-    public function dicaLenteContacto(){
+    public function dicaLenteContacto()
+    {
         $title = "Dicas de Lentes de Contacto";
         $menu = "Dicas de Lentes de Contacto";
         $type = "dica-lente-contacto";
@@ -70,7 +79,8 @@ class HomeController extends Controller
         return view('dica-lente-contacto', compact('title', 'menu', 'type'));
     }
 
-    public function oculosGraduados(){
+    public function oculosGraduados()
+    {
         $title = "Óculos Graduados";
         $menu = "Óculos Graduados";
         $type = "oculos-graduados";
@@ -78,7 +88,8 @@ class HomeController extends Controller
         return view('oculos-graduados', compact('title', 'menu', 'type'));
     }
 
-    public function oculosSol(){
+    public function oculosSol()
+    {
         $title = "Óculos de Sol";
         $menu = "Óculos de Sol";
         $type = "oculos-sol";
@@ -86,7 +97,8 @@ class HomeController extends Controller
         return view('oculos-sol', compact('title', 'menu', 'type'));
     }
 
-    public function marcasExclusivas(){
+    public function marcasExclusivas()
+    {
         $title = "Marcas Exclusivas";
         $menu = "Marcas Exclusivas";
         $type = "marcas-exclusivas";
@@ -94,7 +106,8 @@ class HomeController extends Controller
         return view('marcas-exclusivas', compact('title', 'menu', 'type'));
     }
 
-    public function marcasRepresentadas(){
+    public function marcasRepresentadas()
+    {
         $title = "Marcas Representadas";
         $menu = "Marcas Representadas";
         $type = "marcas-representadas";
@@ -102,7 +115,8 @@ class HomeController extends Controller
         return view('marcas-representadas', compact('title', 'menu', 'type'));
     }
 
-    public function sulOpticaLda(){
+    public function sulOpticaLda()
+    {
         $title = "Sul Óptica LDA";
         $menu = "Sul Óptica LDA";
         $type = "sul-optica-lda";
@@ -110,7 +124,8 @@ class HomeController extends Controller
         return view('sul-optica-lda', compact('title', 'menu', 'type'));
     }
 
-    public function novidades(){
+    public function novidades()
+    {
         $title = "Novidades";
         $menu = "Novidades";
         $type = "novidades";
@@ -118,7 +133,8 @@ class HomeController extends Controller
         return view('novidades', compact('title', 'menu', 'type'));
     }
 
-    public function galeria(){
+    public function galeria()
+    {
         $title = "Galeria";
         $menu = "Galeria";
         $type = "galeria";
@@ -126,7 +142,8 @@ class HomeController extends Controller
         return view('galeria', compact('title', 'menu', 'type'));
     }
 
-    public function cadastro(){
+    public function cadastro()
+    {
         $title = "Cadastro";
         $menu = "Cadastro";
         $type = "cadastro";
@@ -135,14 +152,29 @@ class HomeController extends Controller
     }
 
 
-    public function cadastroStore(Request $request){
-$this->validate($request, [
-   'tNome'=>'required',
-   'tMail'=>'required',
-   'tEspec'=>'required',
-   'tLocal'=>'required',
-   'tTel'=>'required'
-],[],[]);
-    }
+    public function cadastroStore(Request $request)
+    {
+        $this->validate($request, [
+            'tNome' => 'required',
+            'tMail' => 'required',
+            'tEspec' => 'required',
+            'tLocal' => 'required',
+            'tTel' => 'required',
+            'data'=>'required',
+        ], [], []);
 
+        $data=[
+            'nome'=>$request->tNome,
+            'email'=>$request->tMail,
+            'local'=>$request->tLocal,
+            'telefone'=>$request->tTel,
+            'especialidade'=>$request->tEspec,
+            'data'=>$request->data,
+        ];
+
+
+        Consulta::create($data);
+
+        return back()->with('message', 'Consulta Marcada com Sucesso');
+    }
 }

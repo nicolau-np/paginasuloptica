@@ -15,7 +15,9 @@
                             <div class="footer__block">
                                 <div class="messagem">
                                     @if (session('message'))
-                                        <h6>{{ session('message') }}</h6>
+                                        <div class="alert success">
+                                            {{ session('message') }}
+                                        </div>
                                     @endif
                                 </div>
                                 <div class="footer__block__title">
@@ -24,48 +26,69 @@
                                         @csrf
                                         <fieldset id="consulta">
                                             <legend style="font-weight: bold;">MARQUE A SUA CONSULTA</legend>
-                                            <P>Preencha o formulário para marcação e serás contactado via telefone
-                                            </P> <br>
-                                            <p><label for="cNome">Nome:</label> <input type="text" name="tNome"
-                                                    id="cNome" size="20" maxlength="30"
-                                                    placeholder="Nome Completo" />
-                                                @if ($errors->has('tNome'))
-                                                    <span>{{ $errors->first('tNome') }}</span>
-                                                @endif
-                                            </p>
-                                            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail"
-                                                    id="cMail" size="20" maxlength="40"
-                                                    placeholder="correio electronico" />
-                                                @if ($errors->has('tMail'))
-                                                    <span>{{ $errors->first('tMail') }}</span>
-                                                @endif
-                                            </p>
-                                            <p><label for="cEspec">Especialidade</label>
-                                                <select name="tEspec" id="cEspec">
-                                                    <option value="Opt">OPTOMETRIA</option>
-                                                    <option value="Oft">OFTALMOLOGIA</option>
-                                                </select>
-                                                @if ($errors->has('tEspec'))
-                                                    <span>{{ $errors->first('tEspec') }}</span>
-                                                @endif
-                                            </p>
-                                            <p><label for="cLocal">Localidade</label> <input type="text" name="tLocal"
-                                                    id="cLocal" size="20" maxlength="30" placeholder="Bairro/Rua" />
-                                                @if ($errors->has('tLocal'))
-                                                    <span>{{ $errors->first('tLocal') }}</span>
-                                                @endif
-                                            </p>
-                                            <p><label for="cTel">Telefone</label> <input type="numero" name="tTel"
-                                                    id="cTel" size="16" maxlength="16" placeholder="16 dígitos">
-                                                @if ($errors->has('tTel'))
-                                                    <span>{{ $errors->first('tTel') }}</span>
-                                                @endif
-                                            </p>
+                                            Preencha o formulário para marcação e serás contactado via telefone
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-8 mb-2">
+                                                    <label for="cNome">Nome: <span class="text-danger">*</span></label> <input type="text" name="tNome"
+                                                        id="cNome" size="20" maxlength="30"
+                                                        placeholder="Nome Completo" class="form-control" />
+                                                    @if ($errors->has('tNome'))
+                                                        <span class="text-danger">{{ $errors->first('tNome') }}</span>
+                                                    @endif
+                                                </div>
+
+                                                <div class="col-md-8 mb-2">
+                                                    <label for="cMail">E-mail: <span class="text-danger">*</span></label> <input type="email"
+                                                        name="tMail" id="cMail" size="20" maxlength="40"
+                                                        placeholder="correio electronico" class="form-control" />
+                                                    @if ($errors->has('tMail'))
+                                                        <span class="text-danger">{{ $errors->first('tMail') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-8 mb-2">
+                                                    <label for="cEspec">Especialidade <span class="text-danger">*</span></label>
+                                                    <select name="tEspec" id="cEspec" class="form-control">
+                                                        <option value="Opt">OPTOMETRIA</option>
+                                                        <option value="Oft">OFTALMOLOGIA</option>
+                                                    </select>
+                                                    @if ($errors->has('tEspec'))
+                                                        <span class="text-danger">{{ $errors->first('tEspec') }}</span>
+                                                    @endif
+                                                </div>
+                                                
+                                                <div class="col-md-8 mb-2">
+                                                    <label for="data">Data <span class="text-danger">*</span></label>
+                                                    <input type="date" name="data" id=""
+                                                        class="form-control" />
+                                                    @if ($errors->has('data'))
+                                                        <span class="text-danger">{{ $errors->first('data') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-8 mb-2">
+                                                    <label for="cLocal">Localidade <span class="text-danger">*</span></label> <input type="text"
+                                                        name="tLocal" id="cLocal" size="20" maxlength="30"
+                                                        placeholder="Bairro/Rua" class="form-control" />
+                                                    @if ($errors->has('tLocal'))
+                                                        <span class="text-danger">{{ $errors->first('tLocal') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-8 mb-4">
+                                                    <label for="cTel">Telefone <span class="text-danger">*</span></label> <input type="numero"
+                                                        name="tTel" id="cTel" size="16" maxlength="16"
+                                                        placeholder="16 dígitos" class="form-control">
+                                                    @if ($errors->has('tTel'))
+                                                        <span class="text-danger">{{ $errors->first('tTel') }}</span>
+                                                    @endif
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                                </div>
+                                            </div>
+
                                         </fieldset>
-                                        <br>
-                                        <button type="submit">Salvar</button>
+
                                     </form>
-                                    </ul>
                         </section>
                     </div>
                 </div>

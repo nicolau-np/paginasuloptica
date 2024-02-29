@@ -10,12 +10,14 @@ class Consulta extends Model
     use HasFactory;
 
     protected $fillable = [
-        'pessoa_id',
-        'tipo_consulta',
-       'sintomas',
+        'nome',
+        'email',
+        'local',
+        'telefone',
+        'especialidade',
+        'data',
+        'sintomas',
     ];
 
-    public function pessoa(){
-        return $this->belongsTo(Pessoa::class, 'pessoa_id');
-    }
+
 }

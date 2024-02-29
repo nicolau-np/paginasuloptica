@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('local');
             $table->string('telefone');
             $table->string('especialidade')->nullable();
+            $table->date('data')->nullable();
             $table->text('sintomas')->nullable();
             $table->timestamps();
         });
