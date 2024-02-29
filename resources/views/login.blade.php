@@ -3,7 +3,7 @@
     <div class="container">
         <div class="container__top">
             <div class="full_center">
-                <h1>MARCAÇÕES DE CONSULTAS</h1>
+                <h1>INICIAR SESSÃO</h1>
             </div>
         </div>
 
@@ -25,9 +25,7 @@
                                         @method('POST')
                                         @csrf
                                         <fieldset id="consulta">
-                                            <legend style="font-weight: bold;">MARQUE A SUA CONSULTA</legend>
-                                            Preencha o formulário para marcação e serás contactado via telefone
-                                            <br>
+
                                             <div class="row">
                                                 <div class="col-md-8 mb-2">
                                                     <label for="cNome">Email: <span class="text-danger">*</span></label>
