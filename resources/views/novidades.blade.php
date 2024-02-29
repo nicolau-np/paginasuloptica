@@ -3,7 +3,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="{{asset('assets/imagens/glass-logo-peq.jpg')}}" /></div></br>
+            <div class="seo_description"><img src="{{asset('assets/images/glass-logo-peq.jpg')}}" /></div></br>
             <h1>NOVIDADES</h1>
         </div>
     </div>
@@ -34,7 +34,7 @@
                                     rotas de mapas, e além disso, também é possível efetuar chamadas de vídeo ou
                                     tirar fotos de algo que se esteja a ver e compartilhar imediatamente através
                                     da internet.</p> <br>
-                                <video id="movie1" controls="controls" poster="{{asset('assets/imagens/Introdução.png')}}">
+                                <video id="movie1" controls="controls" poster="{{asset('assets/images/Introdução.png')}}">
                                     <source src="media/Introduction to Google Glass.mp4" type="video/mp4" />
                                 </video> <br>
 
@@ -45,7 +45,7 @@
                                     Glass é sofisticado e futurista, mas não possui lentes dos dois lados.</p>
                                 <br>
                                 <figure class="foto-legenda">
-                                    <img src="{{asset('assets/imagens/glass-quadro-homem-mulher.jpg')}}" />
+                                    <img src="{{asset('assets/images/glass-quadro-homem-mulher.jpg')}}" />
                                     <figcaption>
                                         <h3>Google Glass</h3>
                                         <p>Uma nova maneira de ver o mundo.</p>
@@ -100,7 +100,7 @@
                                 <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma
                                     espécie de “super<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
                                 </p>
-                                <video id="movie2" controls="controls" poster="{{asset('assets/imagens/video-mini01.jpg')}}">
+                                <video id="movie2" controls="controls" poster="{{asset('assets/images/video-mini01.jpg')}}">
                                     <source src="media/one-day.mp4" type="video/mp4" />
                                 </video>
 
@@ -110,7 +110,7 @@
                     <aside id="lateral">
                         <h1>Outras Notícias</h1>
                         <h2>Vídeo mais recente</h2>
-                        <video id="movie3" controls="controls" poster="{{asset('assets/imagens/video-mini02.jpg')}}">
+                        <video id="movie3" controls="controls" poster="{{asset('assets/images/video-mini02.jpg')}}">
                             <source src="media/how-it-feels.mp4" type="video/mp4" />
                         </video>
 
@@ -175,38 +175,15 @@
             <link rel="stylesheet"
                 href="./900+ Responsive Website Templates - MotoCMS_files/catalog-b4123f98abb1ce9a24e7.css"
                 onload="window._motoLoadCss();">
-            <script type="text/javascript"
-                id="">var head = document.getElementsByTagName("head")[0], script = document.createElement("script"); script.async = !0; script.src = "https://web.webpushs.com/js/push/434c57a140bc4f34f3022836e7d02f2d_1.js"; head.appendChild(script);</script>
-            <!--<![endif]-->
-            <noscript>
-                <link rel="stylesheet"
-                    href="/website-templates/themes/motoshopv2/assets/dist/css/catalog-b4123f98abb1ce9a24e7.css">
-            </noscript>
-            <script
-                src="./Free Website Templates Download - Responsive MotoCMS Builder_files/bundle-landing_free.js"
-                async="async"></script>
 
-            <script type="text/javascript"
-                id="">(function (b, c, e, f, d) { b[d] = b[d] || []; var g = function () { var a = { ti: "5223675" }; a.q = b[d]; b[d] = new UET(a); b[d].push("pageLoad") }; var a = c.createElement(e); a.src = f; a.async = 1; a.onload = a.onreadystatechange = function () { var b = this.readyState; b && "loaded" !== b && "complete" !== b || (g(), a.onload = a.onreadystatechange = null) }; c = c.getElementsByTagName(e)[0]; c.parentNode.insertBefore(a, c) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
-            <noscript>
-                <img src="//bat.bing.com/action/0?ti=5223675&amp;Ver=2" alt="BING_REMARKETING_CODE" height="0"
-                    width="0" style="display:none; visibility: hidden;">
-            </noscript>
-            <script type="text/javascript"
-                id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "//connect.facebook.net/en_US/fbevents.js");
-                    "undefined" !== typeof fbq && (fbq("init", "1454828164843464"), fbq("track", "PageView"), "undefined" !== typeof window && "undefined" !== typeof window.__moto__ && "undefined" !== typeof window.__moto__.fbqParams && ("undefined" !== typeof window.__moto__.fbqParams.viewContent && fbq("track", "ViewContent", window.__moto__.fbqParams.viewContent), "undefined" !== typeof window.__moto__.fbqParams.search && fbq("track", "Search", { search_string: window.__moto__.fbqParams.search.search_string })));</script>
-            <noscript>
-                <script type="text/javascript"
-                    id="">var elementsBtnFb = document.querySelectorAll("._fb_event_btn_click"); "undefined" !== typeof elementsBtnFb && null !== elementsBtnFb && 0 < elementsBtnFb.length && Array.prototype.forEach.call(elementsBtnFb, function (a, c) { a.addEventListener("click", function (b) { b = a.getAttribute("data-button_name"); "undefined" !== typeof fbq && null !== elementsBtnFb && "undefined" !== typeof window && "undefined" !== typeof window.location && "undefined" !== typeof window.location.href && fbq("trackCustom", "Button Clicks", { content_name: b, page: window.location.href }) }) });</script>
+
                 <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon67971474483">
                     <img style="width:0px; height:0px; display:none; visibility:hidden;"
                         id="batBeacon648841036977" width="0" height="0" alt=""
                         src="./900+ Responsive Website Templates - MotoCMS_files/0">
                 </div>
-                <script type="text/javascript"
-                    id="">"undefined" !== typeof fbq && fbq("trackCustom", "Scroll Tracking", { "Scroll Depth": google_tag_manager["GTM-NL3492"].macro(12), "Scroll Time": google_tag_manager["GTM-NL3492"].macro(13), page: google_tag_manager["GTM-NL3492"].macro(14) });</script>
-                <div id="chat-widget-container"
-                    style="opacity: 1; visibility: visible; z-index: 2147483639; position: fixed; bottom: 55px; width: 84px; height: 84px; max-width: 100%; max-height: calc(100% - 55px); min-height: 0px; min-width: 0px; background-color: transparent; border: 0px; overflow: hidden; right: 30px; transition: none 0s ease 0s !important;">
+
+                <div id="chat-widget-container" style="opacity: 1; visibility: visible; z-index: 2147483639; position: fixed; bottom: 55px; width: 84px; height: 84px; max-width: 100%; max-height: calc(100% - 55px); min-height: 0px; min-width: 0px; background-color: transparent; border: 0px; overflow: hidden; right: 30px; transition: none 0s ease 0s !important;">
                     <iframe
                         allow="autoplay; microphone *; camera *; display-capture *; picture-in-picture *; fullscreen *;"
                         src="./900+ Responsive Website Templates - MotoCMS_files/open_chat.html"

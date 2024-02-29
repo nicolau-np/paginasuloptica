@@ -3,7 +3,7 @@
 <div class="container">
 <div class="container__top">
     <div class="full_center">
-        <div class="seo_description"> <img src="{{asset('assets/imagens/zeiss-home.png')}}" /></div></br>
+        <div class="seo_description"> <img src="{{asset('assets/images/zeiss-home.png')}}" /></div></br>
         <p style="text-align: justify;">A marca <span style="font-weight: 900;">ZEISS</span> é sinónimo
             de inovação e de alta tecnologia, lider mundial de óptica de precisão, combina conhecimentos
             e ideias inovadoras em exeperiências </br> visuais excepcionais.</p></br>
@@ -32,11 +32,11 @@
                                     disponibilizamos a solução que vai </br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;garantir a protecção dos seus olhos. Em
                                     exclusivo na </br> &nbsp;&nbsp;&nbsp;&nbsp;Sul Óptica LDA.</p></br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{asset('assets/imagens/zeiss-image.png')}}" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{asset('assets/images/zeiss-image.png')}}" />
 
                             </figure>
                             <figure class="perfil-visual">
-                                <img src="{{asset('assets/imagens/zeiss-image_01.png')}}">
+                                <img src="{{asset('assets/images/zeiss-image_01.png')}}">
                                 <p style="text-align: justify;"> </br> <span
                                         style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O MEU
                                         PERFIL VISUAL</span> </br> </br> <span
@@ -76,7 +76,7 @@
                                     preocupações. </p></br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-                                    src="{{asset('assets/imagens/zeiss-image_02.png')}}" />
+                                    src="{{asset('assets/images/zeiss-image_02.png')}}" />
                                 </ul>
                 </section>
             </div>

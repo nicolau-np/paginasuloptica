@@ -30,3 +30,4 @@ Route::get('sul-optica-lda', [HomeController::class, 'sulOpticaLda']);
 Route::get('novidades', [HomeController::class, 'novidades']);
 Route::get('galeria', [HomeController::class, 'galeria']);
 Route::get('cadastro', [HomeController::class, 'cadastro']);
+Route::post('cadastro', [HomeController::class, 'cadastroStore']);

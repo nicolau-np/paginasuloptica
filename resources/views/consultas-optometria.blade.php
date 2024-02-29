@@ -3,7 +3,7 @@
 <div class="container">
     <div class="container__top">
         <div class="full_center">
-            <div class="seo_description"><img src="{{asset('assets/imagens/saude-ocular.png" /></div></br>
+            <div class="seo_description"><img src="{{asset('assets/images/saude-ocular.png')}}" /></div></br>
             <h1>AO SERVIÇO DA SAÚDE OCULAR</h1></br>
             <p style="text-align: justify;">A nossa equipa é constituída por profissionais de elevado nível
                 técnico, ético e humano. Apostamos em equipamentos, tecnologia de ponta e numa equipa</br>

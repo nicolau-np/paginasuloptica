@@ -134,4 +134,15 @@ class HomeController extends Controller
         return view('cadastro', compact('title', 'menu', 'type'));
     }
 
+
+    public function cadastroStore(Request $request){
+$this->validate($request, [
+   'tNome'=>'required',
+   'tMail'=>'required',
+   'tEspec'=>'required',
+   'tLocal'=>'required',
+   'tTel'=>'required'
+],[],[]);
+    }
+
 }

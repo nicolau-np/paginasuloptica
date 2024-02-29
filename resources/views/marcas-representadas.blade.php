@@ -18,7 +18,7 @@
                         <div class="footer__block">
                             <div class="footer__block__title">
                                 <figure class="oculos-sol">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{asset('assets/imagens/1024x413_2_1.png')}}" />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{asset('assets/images/1024x413_2_1.png')}}" />
                                     <p> <span style="font-weight: bold;"><br><br><br>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ÓCULOS DE SOL</span></br> <span
                                             style="font-weight: bold;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESFRUTA
@@ -38,7 +38,7 @@
                                             style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRANDES
                                             MARCAS</span></p></br><br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-                                        src="{{asset('assets/imagens/1024x413.png')}}" />
+                                        src="{{asset('assets/images/1024x413.png')}}" />
                                 </figure>
                                 </ul>
                                 </ul>

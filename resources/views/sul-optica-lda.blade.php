@@ -16,9 +16,7 @@
                             <div class="footer__block__title">
                                 <figure class="foto-mapa">
 
-                                    &nbsp;&nbsp;&nbsp; <img src="{{asset('assets/imagens/transferir.png')}}" alt="Mapa">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                                    
 
                                     <form method="POST" id="fLoja" action="mailto:suloptica@live.com.pt">
                                         <fieldset id="contactenos">
@@ -34,7 +32,7 @@
                                                     placeholder="Deixe aqui a sua mensagem"></textarea>
                                             </p>
                                         </fieldset>
-                                        <input type="image" name="tEnviar" src="{{asset('assets/imagens/botao-enviar.png')}}">
+                                        <input type="image" name="tEnviar" src="{{asset('assets/images/botao-enviar.png')}}">
                                         </from>
                                         </ul>
                                 </figure>
