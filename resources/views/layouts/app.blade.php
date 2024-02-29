@@ -307,7 +307,7 @@
 
                             <ul class="drop_menu drop_menu__lang">
                                 <li class="parent_li">
-                                    <a>pt</a>
+                                   
 
                                     <ul class="sub">
                                         <li>
@@ -327,14 +327,9 @@
 
                             <div class="icon_links">
 
-                                <a href="/galeria" class="icon_links__cart">
-                                    <span class="_count_items_cart _hide">0</span>
-                                    <img class=" lazyloaded" alt="cart"
-                                        src="{{ asset('assets/images/cart.svg') }}"
-                                        data-imagesrc="/images/landings/free/redesign/cart.svg">
-                                </a>
 
-                                <a class="button_user" href="/cadastro">
+
+                                <a class="button_user" href="/login">
                                     <img class=" lazyloaded" alt="user"
                                         src="{{ asset('assets/images/user.svg') }}"
                                         data-imagesrc="/images/landings/free/redesign/user.svg">

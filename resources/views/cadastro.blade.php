@@ -15,7 +15,7 @@
                             <div class="footer__block">
                                 <div class="messagem">
                                     @if (session('message'))
-                                        <div class="alert success">
+                                        <div class="alert alert-success">
                                             {{ session('message') }}
                                         </div>
                                     @endif
@@ -41,7 +41,7 @@
                                                 <div class="col-md-8 mb-2">
                                                     <label for="cMail">E-mail: <span class="text-danger">*</span></label> <input type="email"
                                                         name="tMail" id="cMail" size="20" maxlength="40"
-                                                        placeholder="correio electronico" class="form-control" />
+                                                        placeholder="Correio Electronico" class="form-control" />
                                                     @if ($errors->has('tMail'))
                                                         <span class="text-danger">{{ $errors->first('tMail') }}</span>
                                                     @endif
@@ -49,14 +49,15 @@
                                                 <div class="col-md-8 mb-2">
                                                     <label for="cEspec">Especialidade <span class="text-danger">*</span></label>
                                                     <select name="tEspec" id="cEspec" class="form-control">
-                                                        <option value="Opt">OPTOMETRIA</option>
-                                                        <option value="Oft">OFTALMOLOGIA</option>
+                                                        <option value="" hidden>Especialidade</option>
+                                                        <option value="OPTOMETRIA">OPTOMETRIA</option>
+                                                        <option value="OFTALMOLOGIA">OFTALMOLOGIA</option>
                                                     </select>
                                                     @if ($errors->has('tEspec'))
                                                         <span class="text-danger">{{ $errors->first('tEspec') }}</span>
                                                     @endif
                                                 </div>
-                                                
+
                                                 <div class="col-md-8 mb-2">
                                                     <label for="data">Data <span class="text-danger">*</span></label>
                                                     <input type="date" name="data" id=""

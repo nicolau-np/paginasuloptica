@@ -177,4 +177,12 @@ class HomeController extends Controller
 
         return back()->with('message', 'Consulta Marcada com Sucesso');
     }
+
+    public function login(){
+        $title = "Iniciar Sessao";
+        $menu = "Login";
+        $type = "login";
+
+        return view('login', compact('title', 'menu', 'type'));
+    }
 }
