@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('consultas', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('pessoa_id');
-            $table->string('tipo_consulta')->nullable();
+            $table->string('nome');
+            $table->string('email');
+            $table->string('local');
+            $table->string('telefone');
+            $table->string('especialidade')->nullable();
             $table->text('sintomas')->nullable();
             $table->timestamps();
-
-            $table->foreign('pessoa_id')->references('id')->on('pessoas')->onDelete('cascade');
         });
     }
 
